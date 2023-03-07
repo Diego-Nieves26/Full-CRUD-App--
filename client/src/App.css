@@ -1,0 +1,260 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 30px 0;
+  background-color: #262626;
+}
+
+.App {
+  width: 90%;
+  margin: auto;
+  max-width: 1000px;
+}
+
+.nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__h1 {
+  font-size: 50px;
+  color: #fff;
+}
+
+.nav__button {
+  font-size: 1rem;
+  background: #be985f;
+  color: #fff;
+  padding: 10px 10px 10px 20px;
+  border: none;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.userList {
+  width: 100%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.card {
+  width: 360px;
+  min-height: 274px;
+  border: 1px solid #be985f;
+  border-radius: 4px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+.card__h2 {
+  font-size: 25px;
+  line-height: 31px;
+  text-align: center;
+  color: #fff;
+}
+
+.card__info {
+  width: 100%;
+  padding: 15px 0;
+  border-top: 1px solid #be985f;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card__info--h4 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #fff;
+}
+
+.card__info--span {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: rgba(255, 255, 255, 0.7);
+  margin-left: 10px;
+}
+
+.card__button {
+  border-top: 1px solid #be985f;
+  width: 100%;
+  padding: 10px 0 0;
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+}
+
+.card__button--btn {
+  width: 43px;
+  height: 43px;
+  font-size: 23px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.card__button--btn:nth-child(1) {
+  background: #d85d5d;
+  color: #fff;
+  border: 1px solid #d93f3f;
+}
+
+.card__button--btn:nth-child(2) {
+  background: #f7f7f7;
+  border: 1px solid #bdbdbd;
+  color: #bdbdbd;
+}
+
+.modal {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.form {
+  width: 90%;
+  height: 600px;
+  background-color: #000;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  position: relative;
+  max-width: 450px;
+}
+
+.form__h2 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+  color: #fff;
+}
+
+.form__div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form__div__label {
+  font-size: 16px;
+  line-height: 19px;
+  color: #be985f;
+}
+
+.form__div__input {
+  width: 100%;
+  height: 48px;
+  background: #131313;
+  border-radius: 5px;
+  padding: 10px;
+  outline: none;
+  color: #fff;
+}
+
+.password__container {
+  position: relative;
+}
+
+.modalRemove {
+  background-color: #e9d5ca;
+  width: 370px;
+  min-height: 265px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  position: relative;
+}
+
+.btn-to-accept {
+  background: #be985f;
+  color: #fff;
+  padding: 15px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 1rem;
+  padding: 5px;
+  border-radius: 50%;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.show-and-hide {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 1.5rem;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: #be985f;
+}
+
+@media (max-width: 500px) {
+  .nav {
+    flex-direction: column;
+  }
+
+  .userList {
+    grid-template-columns: repeat(1, auto);
+  }
+}
+
+@media (min-width: 800px) {
+  .nav {
+    flex-direction: row;
+  }
+
+  .userList {
+    grid-template-columns: repeat(2, auto);
+  }
+}
+
+@media (min-width: 1100px) {
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #e9d5ca;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #be985f;
+    border-radius: 5px;
+  }
+
+  .userList {
+    grid-template-columns: repeat(3, auto);
+  }
+}
