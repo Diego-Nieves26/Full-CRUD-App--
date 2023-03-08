@@ -20,11 +20,11 @@ La pagina consiste en listar todos los usuarios, mostrando su nombre, apellido, 
 
 ## Link
 
-- https://proyect-crud-api.herokuapp.com/api/v1/
+- https://full-crud-app-back.onrender.com/api/v1/
 
 ## Abrir App
 
-- [CRUD App](https://papaya-malasada-686ac1.netlify.app/)
+- [CRUD App](https://vocal-boba-408f1c.netlify.app)
 
 ## Documentacion de la API
 
