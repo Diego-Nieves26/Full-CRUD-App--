@@ -3,7 +3,7 @@ import { setIsLoading } from "./isLoading.slice";
 import axios from "axios";
 import { getUsers } from "./users.slice";
 
-const API = "https://proyect-crud-api.herokuapp.com/api/v1/users/";
+const API = "https://full-crud-app-back.onrender.com/api/v1/users/";
 
 export const userSelectedSlice = createSlice({
   name: "userSelected",
