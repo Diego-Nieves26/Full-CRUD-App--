@@ -3,6 +3,11 @@ const cors = require("cors");
 const helmet = require("helmet");
 const compression = require("compression");
 const morgan = require("morgan");
+const swaggerUi = require("swagger-ui-express"),
+  swaggerDocument = require("./utils/swagger.util.json");
+
+// Swagger Options
+const { options } = require("./utils/swagger.util");
 
 // Routers
 const { usersRouter } = require("./routes/users.routes");
@@ -33,6 +38,9 @@ if (process.env.NODE_ENV === "development") {
 
 // Cors
 app.use(cors());
+
+// Use Swagger
+app.use("/api/v1/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
 // Define endpoints
 app.use("/api/v1/users", usersRouter);

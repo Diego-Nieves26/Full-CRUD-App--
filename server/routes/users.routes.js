@@ -15,12 +15,13 @@ const { userExists } = require("../middlewares/users.middleware");
 const usersRouter = express.Router();
 
 //Routes
-usersRouter.post("/", createUserValidator, createUser);
+
+usersRouter.post("/new", createUserValidator, createUser);
 
 usersRouter.get("/", getAllActiveUsers);
 
-usersRouter.patch("/:id", userExists, updateUser);
+usersRouter.patch("/update/:id", userExists, updateUser);
 
-usersRouter.delete("/:id", userExists, disableUser);
+usersRouter.delete("/delete/:id", userExists, disableUser);
 
 module.exports = { usersRouter };
