@@ -28,7 +28,7 @@ La pagina consiste en listar todos los usuarios, mostrando su nombre, apellido, 
 
 ## Documentacion de la API
 
-- https://documenter.getpostman.com/view/21287351/VUjQo59r
+- https://full-crud-app-back.onrender.com/api/v1/api-docs
 
 ## Lenguajes y Herramientas
 
